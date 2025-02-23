@@ -1,0 +1,7 @@
+install creat-react-app:  npx create-react-app myapp
+
+use-effects
+xu ly side-effects: thay doi trong ham se thay doi ben ngoai khong return gi ca
+
+
+
