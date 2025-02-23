@@ -1,0 +1,98 @@
+.list_order_container {
+  margin-top: 30px;
+  margin-right: 14px;
+}
+
+.list_order_title {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.list_order_list_item {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Góc bo tròn */
+  background-color: #f9f9f9; /* Màu nền nhẹ */
+  padding: 20px; /* Khoảng cách bên trong */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+  margin-top: 10px;
+}
+
+.list_order_item {
+  border-bottom: 1px solid #e0e0e0; /* Đường kẻ giữa các đơn hàng */
+  padding: 15px 0;
+}
+
+.list_order_item:last-child {
+  border-bottom: none; /* Loại bỏ đường kẻ cuối cùng */
+}
+
+.list_order_item_info,
+.list_order_item_address,
+.list_order_item_date {
+  margin-bottom: 10px;
+}
+
+.list_order_item_label {
+  font-size: 18px; /* Giảm kích thước để hài hòa hơn */
+  font-weight: bold; /* Chữ đậm */
+  color: #333; /* Màu chữ tối */
+  margin-bottom: 5px;
+}
+
+.list_order_item_content,
+.list_order_item_date {
+  font-size: 16px; /* Kích thước chữ vừa phải */
+  color: #555; /* Màu chữ trung tính */
+  line-height: 1.5; /* Giãn dòng cho dễ đọc */
+}
+
+.list_order_item_total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff; /* Màu xanh nổi bật */
+  text-align: right; /* Căn phải */
+}
+
+.list_order_item_total::before {
+  content: "Tổng tiền: "; /* Thêm nhãn */
+  font-weight: normal;
+  color: #333;
+}
+
+.list_order_item div:nth-child(4) div {
+  font-size: 14px; /* Kích thước nhỏ hơn cho danh sách sản phẩm */
+  color: #666;
+  margin: 5px 0;
+}
+
+.list_order_item div:nth-child(3) div span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.list_order_item_address .list_order_item_content {
+  font-style: italic; /* Tạo phong cách nhấn nhá cho địa chỉ */
+}
+
+.list_order_item:hover {
+  background-color: #f0f8ff; /* Hiệu ứng hover */
+  transform: translateY(-2px); /* Hiệu ứng nổi lên */
+  transition: all 0.3s ease;
+}
+
+.list_order_item_product {
+  padding: 5px 10px;
+}

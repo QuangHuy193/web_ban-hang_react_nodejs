@@ -1,0 +1,25 @@
+.headerlink_container {
+  display: flex;
+  height: 30px;
+  width: 100%;
+  padding: 20px 0 20px 30px;
+  align-items: center;
+  font-size: 18px;
+  background-color: #f7f7f7;
+}
+
+.headerlink_container svg {
+  padding-right: 10px;
+}
+
+.item {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.item:nth-child(1) {
+  color: #c0c0c0;
+}
+.item:hover {
+  color: #77dd21;
+}

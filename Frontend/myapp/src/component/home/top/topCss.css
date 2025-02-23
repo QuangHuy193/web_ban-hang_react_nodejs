@@ -1,0 +1,63 @@
+.top_container {
+  background-color: #6fdd00;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.caret {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(90, 90, 90, 0.51);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  visibility: hidden;
+}
+
+.top_container:hover .caret {
+  opacity: 1;
+  visibility: visible;
+}
+
+.caret:hover {
+  scale: 1.1;
+}
+
+.left {
+  left: 5px;
+}
+
+.right {
+  right: 5px;
+}
+
+.carousel {
+  display: flex; /* Đặt các phần tử theo hàng ngang */
+  width: 100%; /* Giới hạn chiều rộng vùng hiển thị */
+  height: 100%;
+  overflow: hidden; /* Ẩn nội dung tràn */
+  align-items: center;
+  justify-content: left; /* Căn trái nội dung */
+  scroll-snap-type: x mandatory;
+}
+
+.top_item {
+  flex: 0 0 100%; /* Mỗi phần tử chiếm toàn bộ chiều rộng vùng hiển thị */
+  text-align: center; /* Căn giữa văn bản */
+  scroll-snap-align: center; /* Căn giữa khi cuộn */
+  transition: opacity 0.3s ease; /* Hiệu ứng mờ */
+}
+
+.top_item.active {
+  opacity: 1;
+}

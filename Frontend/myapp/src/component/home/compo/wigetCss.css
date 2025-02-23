@@ -1,0 +1,9 @@
+.wiget_container {
+  width: 100%;
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
